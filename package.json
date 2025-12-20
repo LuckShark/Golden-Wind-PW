@@ -2,7 +2,13 @@
   "name": "playlucas",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:report": "npx playwright test && npx playwright show-report",
+    "test:regression": "npx playwright test --headed --grep @regression"
+    
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
