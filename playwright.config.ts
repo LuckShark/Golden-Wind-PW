@@ -32,7 +32,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
-    headless: true, //precisa dessa config para que ele faça o run no modo headless tbm
+    headless: false, //precisa dessa config para que ele faça o run no modo headless tbm
   },
 
   /* Configure projects for major browsers */
