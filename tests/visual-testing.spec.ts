@@ -22,7 +22,7 @@ test.describe("Visual Testing", () => {
   });
 
   //Masking sensitive information in screenshots
-  test.only("Masking screenshot of login page", async ({ page }) => {
+  test("Masking screenshot of login page", async ({ page }) => {
     await page.goto("https://the-internet.herokuapp.com/login");
     await expect(page).toHaveScreenshot("login-info-masked.png", {
       fullPage: true,
